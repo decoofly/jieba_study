@@ -44,7 +44,7 @@ for item in analyse.extract_tags(text,20, withWeight=True):
 '''
     基于 TextRank 算法的关键词抽取
   2.jieba.analyse.textrank(sentence, topK=20, withWeight=False, allowPOS=('ns', 'n', 'vn', 'v'))
-    其中allowPOS 是词性
+    其中allowPOS 是词性,可以根据需要选择自己要筛选的词性
      直接使用，接口相同，默认过滤词性。
 '''
 for item in analyse.textrank(text, topK=20,withWeight=True,allowPOS='ns'):
